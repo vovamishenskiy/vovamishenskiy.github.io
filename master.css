@@ -178,3 +178,21 @@ a{
   margin-bottom: 0;
   margin-left: 0;
 }
+
+.moreIntelTop{
+  color: #D79FFD;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 250%;
+  margin-top: 5px;
+}
+
+.morePic{
+  width: 400px;
+  height: 250px;
+}
+
+.chronoIntel{
+  font-size: 100%;
+}
