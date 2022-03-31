@@ -158,22 +158,6 @@ a{
   border-radius: 30px;
 }
 
-.container{
-  padding: 1%;
-  background-color: #363139;
-  text-align: justify;
-}
-
-.container_item{
-  
-  color: #D79FFD;
-  font-size: 125%;
-  display: inline-block;
-  width: 450px;
-  height: 450px;
-  margin: 75px;
-}
-
 .blockImg{
   width: 450px;
   height: 300px;
