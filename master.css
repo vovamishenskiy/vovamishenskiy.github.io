@@ -97,20 +97,12 @@ a{
   font-size: 200%;
 }
 
-.gotoagreeBtn{
+.gotoagreeBtn, .gotoagreeBtn:hover, .gotoagreeBtn:active, .gotoagreeBtn:visited{
    color: #D79FFD;
    font-size: 150%;
    display: flex;
    align-items: center;
    justify-content: center;
-}
-
-.gotoagree a:visited{
-  color: #D79FFD;
-}
-
-.gotoagree a:active{
-  color: #D79FFD;
 }
 
 .logo{
