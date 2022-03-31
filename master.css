@@ -76,17 +76,9 @@ a{
   font-size: 150%;
 }
 
-.generalinfoBtn a{
+.generalinfoBtn a, .generalinfoBtn a:visited, .generalinfoBtn a:active{
    color: #D79FFD;
    margin-bottom: 2%;
-}
-
-.generalinfoBtn a:visited{
-  color: #D79FFD;
-}
-
-.generalinfoBtn a:active{
-  color: #D79FFD;
 }
 
 .gotoagree{
