@@ -197,6 +197,22 @@ a{
   font-size: 100%;
 }
 
+.description{
+  display: flex;
+  flex-direction: row;
+  width:80%;
+  min-width: 1080px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.d2{
+}
+.descriptionItem{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
 /* TODO: логотип цифрового ветра, три страницы без бутстрапа, адаптивность, js скрипт на выезжающую сбоку на весь экран менюшку */
 
 @media screen (min-width: )
