@@ -5,6 +5,7 @@ body{
   background-color: #363139;
   margin: 0;
   padding: 0;
+  min-width: 760px;
 }
 
 a{
@@ -102,17 +103,20 @@ a{
   justify-content: space-evenly;
   width: 100%;
   min-width: 1600px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .brandBlock{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 40%;
+    justify-content: flex-start;
 }
-
+.bc2 .brandBlock{
+  width: 40%;
+}
+.bc3 .brandBlock{
+  width: 30%;
+}
 .logo{
     height:170px;
     width:100%;
@@ -145,6 +149,24 @@ a{
 
 .cpuImage{
   background-image: url("images/processor.png");
+}
+.intelProcImage{
+  background-image: url("images/intel.png");
+}
+.intelGenerationImage{
+background-image: url("images/intelseries.png");
+}
+.intelSocketImage{
+  background-image: url("images/lga.png");
+}
+.amdProcImage{
+  background-image: url("images/amd.png");
+}
+.amdGenerationImage{
+background-image: url("images/amdseries.png");
+}
+.amdSocketImage{
+  background-image: url("images/am4.png");
 }
 .procText{
   color: #D79FFD;
@@ -240,7 +262,13 @@ a{
   flex-direction: column;
   margin: 10px;
 }
+.link{
+  color:#D79FFD;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
 .link:hover{
+  color:#ffffff;
   cursor: pointer;
 }
 @media screen and (max-width: 1600px){
@@ -248,12 +276,18 @@ a{
     min-width: 1200px;
     flex-direction: column;
   }
-  .brandBlock{
+  .bc2 .brandBlock{
+    width: 1200px;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  .bc3 .brandBlock{
     width: 1200px;
     margin: auto;
     margin-bottom: 30px;
   }
   .procText{
+    margin: auto;
     width: 80%;
   }
   .moreBtn{
@@ -262,12 +296,17 @@ a{
 }
 @media screen and (max-width: 1200px){
   .brandContainer{
-    min-width: 600px;
+    min-width: 0px;
     width: 100%;
     flex-direction: column;
   }
-  .brandBlock{
+  .bc2 .brandBlock{
     width: 100%;
+    margin-bottom: 30px;
+  }
+  .bc3 .brandBlock{
+    width: 100%;
+    margin: auto;
     margin-bottom: 30px;
   }
   .procText{
