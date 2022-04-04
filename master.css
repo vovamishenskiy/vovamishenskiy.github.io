@@ -272,6 +272,7 @@ background-image: url("images/amdseries.png");
   color:#ffffff;
   cursor: pointer;
 }
+
 @media screen and (max-width: 1600px){
   .brandContainer{
     min-width: 1200px;
@@ -294,7 +295,11 @@ background-image: url("images/amdseries.png");
   .moreBtn{
     margin-top: 10px;
   }
+  ul{
+    width: 99.5%;
+  }
 }
+
 @media screen and (max-width: 1200px){
   .brandContainer{
     min-width: 0px;
@@ -317,5 +322,16 @@ background-image: url("images/amdseries.png");
   .moreBtn{
     margin-top: 10px;
   }
+  ul{
+    width: 103.75%;
+  }
+  .footer{
+    width: 103%;
+  }
 }
-/* TODO: логотип цифрового ветра, три страницы без бутстрапа, адаптивность, js скрипт на выезжающую сбоку на весь экран менюшку */
+
+@@media screen {
+
+}
+
+/* TODO: js скрипт на выезжающую сбоку на весь экран менюшку */
