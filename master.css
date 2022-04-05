@@ -318,6 +318,9 @@ background-image: url("images/amdseries.png");
 }
 
 @media screen and (max-width: 1200px){
+  body{
+    width: 96%;
+  }
   .brandContainer{
     min-width: 0px;
     width: 100%;
