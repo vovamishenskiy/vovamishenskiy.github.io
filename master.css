@@ -299,6 +299,22 @@ background-image: url("images/amdseries.png");
   ul{
     width: 99.5%;
   }
+  .description{
+    min-width: 1200px;
+    flex-direction: column;
+  }
+  .d2 .descriptionItem{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .howtoText{
+    width: 75%;
+  }
+  .d3 .description.d3{
+    width: 1180px;
+    margin-bottom: 30px;
+    margin: auto;
+  }
 }
 
 @media screen and (max-width: 1200px){
@@ -329,10 +345,23 @@ background-image: url("images/amdseries.png");
   .footer{
     width: 103%;
   }
+  .description{
+    min-width: 1200px;
+    flex-direction: column;
+  }
+  .d2 .descriptionItem{
+    width: 80%;
+    margin-bottom: 30px;
+  }
+  .howtoText{
+    width: 65%;
+  }
+  .d3{
+    width: 1200px;
+    margin-bottom: 30px;
+    margin: auto;
+  }
 }
 
-@@media screen {
-
-}
 
 /* TODO: js скрипт на выезжающую сбоку на весь экран менюшку */
