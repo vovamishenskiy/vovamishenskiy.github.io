@@ -293,11 +293,32 @@ background-image: url("images/amdseries.png");
     margin: auto;
     width: 80%;
   }
+  .description{
+    min-width: 1200px;
+    flex-direction: column;
+  }
+  .d2 .descriptionItem{
+    width: 1200px;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  .d3 .descriptionItem{
+    width: 1200px;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  .howtoText{
+    margin: auto;
+    width: 80%;
+  }
   .moreBtn{
     margin-top: 10px;
   }
   ul{
-    width: 99.5%;
+    width: 93.5%;
+  }
+  .footer{
+    width: 93%;
   }
 }
 
@@ -323,16 +344,25 @@ background-image: url("images/amdseries.png");
   .moreBtn{
     margin-top: 10px;
   }
+  .description{
+    min-width: 0px;
+    width: 100%;
+    flex-direction: column;
+  }
+  .d2 .descriptionItem{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  h1{
+    margin: 5px;
+  }
   ul{
-    width: 103.75%;
+    width: 93.5%;
   }
   .footer{
-    width: 103%;
+    width: 93%;
   }
-}
-
-@@media screen {
-
 }
 
 /* TODO: js скрипт на выезжающую сбоку на весь экран менюшку */
