@@ -1,0 +1,694 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+@font-face {
+    font-family: 'Involve';
+    src: url('./fonts/Involve-Bold.woff2') format('woff2'),
+        url('./fonts/Involve-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Involve Bold Oblique';
+    src: url('./fonts/Involve-BoldOblique.woff2') format('woff2'),
+        url('./fonts/Involve-BoldOblique.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Involve';
+    src: url('./fonts/Involve-Medium.woff2') format('woff2'),
+        url('./fonts/Involve-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Involve Medium Oblique';
+    src: url('./fonts/Involve-MediumOblique.woff2') format('woff2'),
+        url('./fonts/Involve-MediumOblique.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Involve';
+    src: url('./fonts/Involve-Oblique.woff2') format('woff2'),
+        url('./fonts/Involve-Oblique.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Involve';
+    src: url('./fonts/Involve-Regular.woff2') format('woff2'),
+        url('./fonts/Involve-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Involve';
+    src: url('./fonts/Involve-SemiBold.woff2') format('woff2'),
+        url('./fonts/Involve-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Involve SemiBold Oblique';
+    src: url('./fonts/Involve-SemiBoldOblique.woff2') format('woff2'),
+        url('./fonts/Involve-SemiBoldOblique.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+    color: inherit;
+}
+
+body {
+    background-color: #151515;
+    overflow-x: hidden;
+}
+
+.gradient {
+    position: absolute;
+    z-index: 212;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+}
+
+.gradient img {
+    width: 100%;
+    height: 100%;
+}
+
+.grid {
+    position: absolute;
+    z-index: 211;
+    top: 0;
+}
+
+.container {
+    position: relative;
+    z-index: 999;
+}
+
+.title-container {
+    max-width: 895px;
+    margin: 0 auto;
+    margin-top: 200px;
+    text-align: center;
+    position: relative;
+    z-index: 999;
+}
+
+.title-container.portfolio {
+    margin-top: 40px;
+}
+
+.title-container h1 {
+    font-family: Involve;
+    font-weight: 700;
+    font-size: 93px;
+    line-height: 120px;
+    letter-spacing: 4%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    position: relative;
+    z-index: 769;
+}
+
+.text-container {
+    margin-top: 48px;
+    max-width: 928px;
+    margin-inline: auto;
+}
+
+.text-container p {
+    font-family: Involve;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 24px;
+    letter-spacing: 1%;
+    text-align: center;
+    color: #fff;
+}
+
+.about-container {
+    max-width: 650px;
+    margin-inline: auto;
+    margin-top: 68px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-container h4 {
+    color: #fff;
+    font-family: Involve;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 1%;
+    text-align: center;
+}
+
+.about-container .about-cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.about-container .about-cards .about-card {
+    width: 321.55px;
+    height: 127px;
+    position: relative;
+    border-radius: 24px;
+    background-color: #212121;
+    cursor: pointer;
+    transition: 0.45s ease all;
+    display: flex;
+}
+
+.about-container .about-cards .about-card:hover {
+    transition: 0.45s ease all;
+    background-color: #343434;
+}
+
+.about-container .about-cards .about-card svg {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: 0.45s ease all;
+    border-radius: 50%;
+}
+
+.about-container .about-cards .about-card:hover svg {
+    transition: 0.45s ease all;
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+.about-container .about-cards .about-card p {
+    font-family: Involve;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 1%;
+    color: #fff;
+    margin-top: auto;
+    margin-bottom: 16px;
+    margin-left: 16px;
+    margin-right: auto;
+}
+
+.contact-container {
+    max-width: 350px;
+    margin-inline: auto;
+    margin-top: 61px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-container h4 {
+    font-family: Involve;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 1%;
+    text-align: center;
+    color: #fff;
+}
+
+.contact-container .contacts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-container .contacts a {
+    transition: 0.45s ease all;
+    background: #202020;
+    width: 127px;
+    height: 127px;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container .contacts a svg {
+    width: 60px;
+    height: 60px;
+}
+
+.contact-container .contacts a:hover {
+    background-color: #343434;
+}
+
+.title-container {
+    position: relative;
+}
+
+.title-container .rotate-container {
+    width: 241px;
+    height: 316px;
+    position: absolute;
+    z-index: 768;
+    top: -140px;
+    left: -120px;
+    transition: 0.45s ease all;
+    rotate: 0deg;
+}
+
+.title-container .rotate-container.rotate {
+    transition: 0.45s ease all;
+    rotate: -7deg;
+}
+
+.title-container .rotate-container #rotate-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 22px;
+}
+
+.portfolio-container {
+    max-width: 1180px;
+    width: 100%;
+    margin-top: 24px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+}
+
+.portfolio-container .card {
+    width: 580px;
+    height: 340px;
+    border-radius: 20px;
+    background-color: #343434;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    padding-block: 16px;
+}
+
+.portfolio-container .card .img-container {
+    width: calc(100% - 30px);
+    height: 100%;
+}
+
+.portfolio-container .card .img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+.portfolio-container .card a {
+    font-family: Involve;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 100%;
+    letter-spacing: 1%;
+    color: #fff;
+    text-decoration: none;
+}
+
+.return_link {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 9999;
+}
+
+.return_link a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+}
+
+@keyframes sway {
+
+    0%,
+    100% {
+        transform: translateX(-2.5px);
+    }
+
+    50% {
+        transform: translateX(2.5px);
+    }
+}
+
+.return_link svg {
+    stroke: #fff;
+    width: 36px;
+    animation: sway 3s ease-in-out infinite;
+}
+
+.return_link p {
+    font-family: Involve;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 1%;
+    text-align: center;
+    color: #fff;
+}
+
+@media screen and (max-width: 1180px) {
+    .portfolio-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .title-container {
+        margin-top: 168px;
+    }
+
+    .title-container h1 {
+        font-size: 78px;
+        line-height: 110px;
+    }
+
+    .rotate-container {
+        width: 192px !important;
+        height: 252px !important;
+        top: -100px !important;
+        left: 0 !important;
+    }
+
+    .text-container {
+        margin-top: 38px;
+        max-width: 740px;
+    }
+
+    .text-container p {
+        font-size: 14.34px;
+    }
+
+    .about-container {
+        margin-top: 55px;
+    }
+
+    .about-container h4 {
+        font-size: 29px;
+    }
+
+    .about-container .about-cards .about-card {
+        width: 256px;
+        height: 101px;
+    }
+
+    .about-container .about-cards .about-card p {
+        font-size: 20px;
+    }
+
+    .contact-container {
+        margin-top: 48px;
+    }
+
+    .contact-container h4 {
+        font-size: 28.69px;
+    }
+
+    .contact-container .contacts a {
+        width: 101px;
+        height: 101px;
+    }
+
+    .contact-container .contacts a svg {
+        width: 43px;
+        height: 43px;
+    }
+
+    .text-container {
+        padding-inline: 20px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .title-container h1 {
+        font-size: 53px;
+        line-height: 80px;
+    }
+
+    .title-container .rotate-container {
+        top: -150px !important;
+    }
+
+    .portfolio-container .card {
+        max-width: 580px;
+        width: calc(100% - 40px);
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .about-container .about-cards {
+        flex-direction: column;
+        gap: 16px;
+        width: calc(100% - 40px);
+        margin-inline: 20px;
+    }
+
+    .about-container .about-cards .about-card {
+        width: 100%;
+        height: 117px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .title-container h1 {
+        font-size: 50px;
+        line-height: 70px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .title-container {
+        margin-top: 200px;
+    }
+
+    .title-container h1 {
+        font-family: Involve;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 100%;
+        letter-spacing: 1%;
+        text-align: center;
+        text-transform: none;
+    }
+
+    .title-container .rotate-container {
+        margin: 0 auto;
+        top: -200px !important;
+        left: 50% !important;
+        right: 50% !important;
+        transform: translateX(-50%);
+    }
+
+    .text-container {
+        margin-top: 40px;
+        padding-inline: 20px;
+    }
+
+    .text-container p {
+        font-family: Involve;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 1%;
+        text-align: center;
+    }
+
+    .about-container {
+        margin-top: 72px;
+    }
+
+    .about-container h4 {
+        font-family: Involve;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 100%;
+        letter-spacing: 1%;
+        text-align: center;
+    }
+
+    .contact-container h4 {
+        font-family: Involve;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 100%;
+        letter-spacing: 1%;
+        text-align: center;
+    }
+
+    .contacts,
+    .contact-container .contacts a {
+        width: 100%;
+    }
+}
