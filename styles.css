@@ -215,8 +215,8 @@ body {
 
 main,
 footer {
-    position: relative;
     z-index: 212;
+    position: relative;
 }
 
 .gradient {
