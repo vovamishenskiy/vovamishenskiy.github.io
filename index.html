@@ -4,36 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Vladimir Web developer</title>
+    <meta http-equiv="Content-Language" content="ru">
+    <title>Владимир Мишенский - веб-разработчик: React, Next.js, WordPress</title>
+    <meta name="description"
+        content="Владимир Мишенксий - веб-разработчик, специализируюсь на разработке веб-приложений и сайтов на React, Next.js и WordPress.">
+    <meta property="og:title" content="Владимир Мишенский – Веб-разработчик">
+    <meta property="og:description" content="React, Next.js, WordPress. Портфолио и контакты.">
+    <meta property="og:image" content="https://mishenskiy.ru/img/photo_2025-05-28_08-18-40.jpg">
+    <meta property="og:url" content="https://mishenskiy.ru">
+    <meta name="yandex-verification" content="c515c8eedddb9454" />
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
 </head>
 
 <body>
-    <div class="main-background">
-        <div class="gradient">
-            <img src="./img/gradient.png" alt="">
-        </div>
-        <div class="grid">
-            <img src="./img/Vector.svg" alt="">
-        </div>
-    </div>
-    <div class="container">
-        <div class="title-container">
-            <div class="rotate-container">
-                <img src="./img/photo_2025-05-28_08-18-40.jpg" alt="" id="rotate-pic">
+    <header>
+        <div class="main-background">
+            <div class="gradient">
+                <img src="./img/gradient.png" alt="градиент на фоне">
             </div>
-            <h1>Владимир<br />Веб разработчик</h1>
+            <div class="grid">
+                <img src="./img/Vector.svg" alt="сетка на фоне">
+            </div>
         </div>
-        <div class="text-container">
-            <p>
-                Привет! Я веб-разработчик, с 2022 года создаю и поддерживаю современные веб-приложения на React и
-                Next.js, а также сайты на WordPress и MODX. В работе уделяю особое внимание удобству интерфейса,
-                адаптивной вёрстке и скорости
-                загрузки. Постоянно совершенствую навыки и осваиваю новые JavaScript-библиотеки,
-                чтобы предлагать клиентам передовые и надёжные решения.
-            </p>
-        </div>
+        <div class="container">
+            <div class="title-container">
+                <div class="rotate-container">
+                    <img src="./img/photo_2025-05-28_08-18-40.jpg" alt="фотография" id="rotate-pic">
+                </div>
+                <h1>Владимир<br />Веб-разработчик</h1>
+            </div>
+            <div class="text-container">
+                <p>
+                    Привет! Я веб-разработчик, с 2022 года создаю и поддерживаю современные веб-приложения на React и
+                    Next.js, а также сайты на WordPress и MODX. В работе уделяю особое внимание удобству интерфейса,
+                    адаптивной вёрстке и скорости
+                    загрузки. Постоянно совершенствую навыки и осваиваю новые JavaScript-библиотеки,
+                    чтобы предлагать клиентам передовые и надёжные решения.
+                </p>
+            </div>
+    </header>
+    <main>
         <div class="about-container">
             <h4>Подробнее обо мне</h4>
             <div class="about-cards">
@@ -44,6 +55,14 @@
                             stroke="#212121" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                     <p>Портфолио</p>
+                </a>
+                <a class="about-card" href="https://t.me/vladimirwebdev" target="_blank">
+                    <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.922852" y="0.777344" width="35.8482" height="35.8482" rx="17.9241" fill="white" />
+                        <path d="M14.502 23.0471L23.7356 13.8135M23.7356 13.8135V23.0471M23.7356 13.8135H14.502"
+                            stroke="#212121" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <p>Телеграм канал</p>
                 </a>
                 <a class="about-card" href="https://hh.ru/resume/962408cdff0c5455190039ed1f4d4c62506f4d"
                     target="_blank">
@@ -56,6 +75,8 @@
                 </a>
             </div>
         </div>
+    </main>
+    <footer>
         <div class="contact-container">
             <h4>Связаться со мной</h4>
             <div class="contacts">
@@ -94,9 +115,26 @@
                         </g>
                     </svg>
                 </a>
+                <a href="https://github.com/vovamishenskiy" target="_blank" class="contact-me-btn">
+                    <img src="./img/github-mark-white.svg" alt="github-mark" style="width: 60px; height: 60px;">
+                </a>
             </div>
         </div>
-    </div>
+    </footer>
 </body>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Владимир Мишенский",
+    "jobTitle": "Веб-разработчик",
+    "url": "https://mishenskiy.ru",
+    "sameAs": [
+    "https://t.me/vladimirwebdev",
+    "https://t.me/vovamishenskiy",
+    "https://github.com/vovamishenskiy"
+    ]
+}
+</script>
 
 </html>

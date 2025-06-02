@@ -4,57 +4,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Vladimir Web developer | Portfolio</title>
+    <title>Владимир Мишенский - веб-разработчик: React, Next.js, WordPress</title>
+    <meta name="description"
+        content="Владимир Мишенксий - веб-разработчик, специализируюсь на разработке веб-приложений и сайтов на React, Next.js и WordPress.">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
 </head>
 
 <body>
-    <div class="main-background">
-        <div class="gradient">
-            <img src="./img/gradient.png" alt="">
-        </div>
-        <div class="grid">
-            <img src="./img/Vector.svg" alt="">
-        </div>
-    </div>
-    <div class="return_link">
-        <a href="index.html">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="size-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
-            </svg>
-            <p>Вернуться на главную</p>
-        </a>
-    </div>
-    <div class="container">
-        <div class="title-container portfolio">
-            <h1>Портфолио</h1>
-        </div>
-        <div class="portfolio-container">
-            <div class="card">
-                <div class="img-container">
-                    <img src="./img/rumfot.png" alt="">
-                </div>
-                <a href="https://rumfot.ru" target="_blank">Rumfot</a>
+    <header>
+        <div class="main-background">
+            <div class="gradient">
+                <img src="./img/gradient.png" alt="градиент на фоне">
             </div>
-            <div class="card">
-                <div class="img-container">
-                    <img src="./img/dymdymych.png" alt="">
-                </div>
-                <a href="https://dymdymych.com" target="_blank">Дым Дымыч</a>
-            </div>
-            <div class="card">
-                <div class="img-container">
-                    <img src="./img/smachos.png" alt="">
-                </div>
-                <a href="#" target="_blank">Смачос (в работе)</a>
+            <div class="grid">
+                <img src="./img/Vector.svg" alt="сетка на фоне">
             </div>
         </div>
+        <div class="return_link">
+            <a href="index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
+                </svg>
+                <p>Вернуться на главную</p>
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="title-container portfolio">
+                <h1>Портфолио</h1>
+            </div>
+            <div class="portfolio-container">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="./img/rumfot.png" alt="скриншот Rumfot">
+                    </div>
+                    <a href="https://rumfot.ru" target="_blank">Rumfot</a>
+                </div>
+                <div class="card">
+                    <div class="img-container">
+                        <img src="./img/dymdymych.png" alt="скриншот Дым Дымыч">
+                    </div>
+                    <a href="https://dymdymych.com" target="_blank">Дым Дымыч</a>
+                </div>
+                <div class="card">
+                    <div class="img-container">
+                        <img src="./img/smachos.png" alt="скриншот Смачос">
+                    </div>
+                    <a href="#" target="_blank">Смачос (в работе)</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
         <div class="contact-container">
             <h4>Связаться со мной</h4>
             <div class="contacts">
-                <a href="" class="contact-me-btn">
+                <a href="https://t.me/vovamishenskiy" target="_blank" class="contact-me-btn">
                     <svg width="59" height="59" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <mask id="mask0_48_181" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0"
                             width="59" height="59">
@@ -67,7 +75,7 @@
                         </g>
                     </svg>
                 </a>
-                <a href="" class="contact-me-btn">
+                <a href="mailto:vmishensky6@gmail.com" class="contact-me-btn">
                     <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <mask id="mask0_48_189" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0"
                             width="56" height="56">
@@ -89,9 +97,12 @@
                         </g>
                     </svg>
                 </a>
+                <a href="https://github.com/vovamishenskiy" target="_blank" class="contact-me-btn">
+                    <img src="./img/github-mark-white.svg" alt="github-mark" style="width: 60px; height: 60px;">
+                </a>
             </div>
         </div>
-    </div>
+    </footer>
 </body>
 
 </html>
